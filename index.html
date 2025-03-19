@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hồ sơ & Sổ ghi chú</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcomeMessage">Xin chào!</h1>
+        <img id="avatar" src="avatar.jpg" alt="Ảnh đại diện">
+        <br>
+        <input type="file" id="avatarInput" accept="image/*">
+        <button onclick="changeAvatar()">Cập nhật ảnh</button>
+
+        <p>Tôi thích lập trình và muốn tạo website đẹp!</p>
+        <input type="text" id="nameInput" placeholder="Nhập tên của bạn">
+        <button onclick="saveName()">Lưu tên</button>
+
+        <h2>Sổ ghi chú cá nhân</h2>
+        <input type="text" id="noteInput" placeholder="Nhập ghi chú...">
+        <button onclick="addNote()">Lưu ghi chú</button>
+        <ul id="noteList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
